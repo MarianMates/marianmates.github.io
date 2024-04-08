@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Lottery Number Generator</title>
     <script src="numberGenerator.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
 </head>
 <body>
 <h1>Lottery Number Generator</h1>
@@ -16,18 +18,18 @@
 
     gtag('config', 'UA-125793455-1');
 </script>
-<form id="lotteryForm">
-    <div>
-        <label for="six49Iterations">6/49 Iterations:</label>
-        <input type="number" id="six49Iterations" name="six49Iterations" min="1" value="1">
+<form id="lotteryForm" class="space-y-4">
+    <div class="flex flex-col">
+        <label for="six49Iterations" class="font-bold mb-1">6/49 Iterations:</label>
+        <input type="number" id="six49Iterations" name="six49Iterations" min="1" value="1" class="border-2 border-gray-300 p-2 rounded-md">
     </div>
-    <div>
-        <label for="jokerIterations">Joker Iterations:</label>
-        <input type="number" id="jokerIterations" name="jokerIterations" min="1" value="1">
+    <div class="flex flex-col">
+        <label for="jokerIterations" class="font-bold mb-1">Joker Iterations:</label>
+        <input type="number" id="jokerIterations" name="jokerIterations" min="1" value="1" class="border-2 border-gray-300 p-2 rounded-md">
     </div>
-    <button type="submit">Generate Numbers</button>
+    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Generate Numbers</button>
 </form>
-<div id="results"></div>
+<div id="results" class="mt-6"></div>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
