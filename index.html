@@ -1,27 +1,60 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Corona Ro</title>
-    <meta name="google-site-verification" content="hWyzLshSkJzciI7Pzlu_vF9-HQk9jOVnIR7SAZFkcfU" />
-    <style>
-        body {
-            background-color: black;    
-        }
-        button.btn.btn-light {
-            display:none !important;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>Lottery Number Generator</title>
+    <script src="numberGenerator.js" defer></script>
 </head>
 <body>
-    <h1>Corona Ro</h1>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125793455-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<h1>Lottery Number Generator</h1>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125793455-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'UA-125793455-1');
-    </script>
-<div><script id="coronavirus_stats" src="https://coronavirus.libertatea.ro/iframe"></script></div>
+    gtag('config', 'UA-125793455-1');
+</script>
+<form id="lotteryForm">
+    <div>
+        <label for="six49Iterations">6/49 Iterations:</label>
+        <input type="number" id="six49Iterations" name="six49Iterations" min="1" value="1">
+    </div>
+    <div>
+        <label for="jokerIterations">Joker Iterations:</label>
+        <input type="number" id="jokerIterations" name="jokerIterations" min="1" value="1">
+    </div>
+    <button type="submit">Generate Numbers</button>
+</form>
+<div id="results"></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('lotteryForm');
+        const resultsDiv = document.getElementById('results');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const six49Iterations = document.getElementById('six49Iterations').value;
+            const jokerIterations = document.getElementById('jokerIterations').value;
+
+            const generator = new WeightedNumberGenerator();
+            for (let i = 0; i < parseInt(six49Iterations); i++) {
+                generator.generateLotteryTicket(sixOfFortyNineNumberFrequency, 6);
+            }
+            for (let i = 0; i < parseInt(jokerIterations); i++) {
+                generator.generateLotteryTicket(jokerNumberFrequency, 5);
+            }
+
+            resultsDiv.innerHTML = '';
+            Object.keys(generator.numbers).forEach(key => {
+                const p = document.createElement('p');
+                p.textContent = `${key.includes('j') ? 'Joker' : '6/49'}: ${generator.numbers[key]}`;
+                resultsDiv.appendChild(p);
+            });
+        });
+    });
+</script>
 </body>
 </html>
