@@ -1,0 +1,288 @@
+<button class="cv-print-btn no-print" (click)="print()">
+  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="6 9 6 2 18 2 18 9"/>
+    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+    <rect x="6" y="14" width="12" height="8"/>
+  </svg>
+  Print / Save PDF
+</button>
+
+<div class="cv">
+
+  <header class="cv-header">
+    <div class="cv-header-identity">
+      <div class="cv-avatar" aria-hidden="true">MM</div>
+      <div>
+        <p class="cv-eyebrow">Software Engineer</p>
+        <h1 class="cv-name">Mates Marian-Nicolae</h1>
+        <p class="cv-headline">PHP &nbsp;·&nbsp; Java &nbsp;·&nbsp; Spring Boot &nbsp;·&nbsp; Angular</p>
+      </div>
+    </div>
+    <div class="cv-contacts">
+      <a href="mailto:mates.marian.n@gmail.com" class="cv-contact-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        mates.marian.n&#64;gmail.com
+      </a>
+      <span class="cv-contact-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12
+            a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.92 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7
+            2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45
+            c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        0746 150 999
+      </span>
+      <span class="cv-contact-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        Cluj-Napoca, Romania
+      </span>
+      <span class="cv-contact-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+        </svg>
+        LinkedIn
+      </span>
+    </div>
+  </header>
+
+  <div class="cv-body">
+
+    <!-- SIDEBAR -->
+    <aside class="cv-sidebar">
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Profile</h2>
+        <p>
+          Software Engineer with 8+ years of experience building and supporting
+          enterprise applications across e-commerce, workflow automation, and
+          production environments.
+        </p>
+        <p>
+          Strong backend engineering background with experience in APIs, system
+          integrations, application modernization, Dockerized environments, and
+          cross-functional collaboration alongside DevOps, QA, and business
+          stakeholders.
+        </p>
+        <p>
+          Currently focused on the Java ecosystem, working with Spring Boot and
+          Angular.
+        </p>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Core Skills</h2>
+        <div class="cv-skill">
+          <strong>Backend</strong>
+          <span>Java, Spring Boot, PHP, Symfony, Magento, REST APIs</span>
+        </div>
+        <div class="cv-skill">
+          <strong>Frontend</strong>
+          <span>Angular, TypeScript, JavaScript, RxJS</span>
+        </div>
+        <div class="cv-skill">
+          <strong>Databases</strong>
+          <span>PostgreSQL, MySQL</span>
+        </div>
+        <div class="cv-skill">
+          <strong>DevOps</strong>
+          <span>Docker, OpenShift, Linux, GitLab CI/CD</span>
+        </div>
+        <div class="cv-skill">
+          <strong>Enterprise</strong>
+          <span>Camunda 8, ServiceNow, SDLC, Incident Management</span>
+        </div>
+        <div class="cv-skill">
+          <strong>Quality</strong>
+          <span>JUnit, PHPUnit, PHPStan, Psalm, Playwright</span>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Education</h2>
+        <div class="cv-edu">
+          <strong>Informal School of IT</strong>
+          <p>Postgraduate Course · Web Development</p>
+        </div>
+        <div class="cv-edu">
+          <strong>UBB Cluj-Napoca</strong>
+          <p>Bachelor's Degree · Geography of Tourism</p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Languages</h2>
+        <div class="cv-lang">
+          <strong>Romanian</strong>
+          <span class="cv-lang-level">Native</span>
+        </div>
+        <div class="cv-lang">
+          <strong>English</strong>
+          <span class="cv-lang-level">Proficient</span>
+        </div>
+      </section>
+
+    </aside>
+
+    <!-- MAIN / EXPERIENCE -->
+    <main class="cv-main">
+      <section class="cv-section">
+        <h2 class="cv-section-title">Experience</h2>
+
+        <!-- Nexttech -->
+        <div class="cv-company">
+          <div class="cv-company-header">
+            <div>
+              <h3 class="cv-company-name">Nexttech</h3>
+              <span class="cv-company-loc">Cluj-Napoca</span>
+            </div>
+            <span class="cv-company-dates">Feb 2024 – Present</span>
+          </div>
+
+          <div class="cv-role">
+            <div class="cv-role-header">
+              <h4>Full-Stack Developer <span class="cv-role-tech">Spring Boot + Angular</span></h4>
+              <time>Nov 2024 – Present</time>
+            </div>
+            <ul>
+              <li>Developed backend REST APIs and frontend integrations using Spring Boot and Angular.</li>
+              <li>Worked with JWT authentication, routing, reusable components, forms, and HTTP interceptors.</li>
+              <li>Contributed to modular application structure and backend/frontend integration patterns.</li>
+              <li>Participated in containerized development workflows using Docker.</li>
+              <li>Collaborated with experienced developers on internal application features and implementation approaches.</li>
+              <li>Applied clean code principles and scalable application design practices within full-stack development workflows.</li>
+            </ul>
+            <div class="cv-stack">
+              @for (tag of ['Java', 'Spring Boot', 'Angular', 'TypeScript', 'PostgreSQL', 'JWT', 'REST APIs', 'Docker']; track tag) {
+                <span class="cv-tag">{{ tag }}</span>
+              }
+            </div>
+          </div>
+
+          <div class="cv-role">
+            <div class="cv-role-header">
+              <h4>Technical Application Manager <span class="cv-badge">Side-Allocation</span></h4>
+              <time>Mar 2025 – Jun 2026</time>
+            </div>
+            <ul>
+              <li>Supported GDPR-related workflow orchestration and cross-system identity deletion across 11 banking systems.</li>
+              <li>Investigated incidents through logs, APIs, workflow engines, OpenShift environments, and database analysis.</li>
+              <li>Collaborated with DevOps, QA, and business stakeholders to troubleshoot and resolve production issues.</li>
+              <li>Participated in deployment planning, operational coordination, and release activities.</li>
+              <li>Monitored and supported enterprise applications in production environments.</li>
+              <li>Worked with Camunda workflows, process automation, and operational improvement initiatives.</li>
+              <li>Developed internal automation utilities and tooling using Java and Python.</li>
+              <li>Managed and coordinated incident handling processes through ServiceNow and cross-functional communication.</li>
+            </ul>
+            <div class="cv-stack">
+              @for (tag of ['Camunda 8', 'OpenShift', 'PostgreSQL', 'Java', 'Python', 'ServiceNow', 'APIs', 'SDLC']; track tag) {
+                <span class="cv-tag">{{ tag }}</span>
+              }
+            </div>
+          </div>
+
+          <div class="cv-role">
+            <div class="cv-role-header">
+              <h4>Magento Developer</h4>
+              <time>Feb 2024 – Oct 2024</time>
+            </div>
+            <ul>
+              <li>Investigated and resolved complex backend bugs and platform issues in a large-scale enterprise e-commerce platform.</li>
+              <li>Performed code refactoring and optimization initiatives to improve maintainability and stability.</li>
+              <li>Contributed to backend feature development and platform improvements.</li>
+              <li>Collaborated closely with frontend developers and QA teams during troubleshooting and release cycles.</li>
+              <li>Mentored a junior developer and provided technical guidance during implementation and debugging tasks.</li>
+              <li>Participated in maintaining and improving large-scale e-commerce workflows and integrations.</li>
+            </ul>
+            <div class="cv-stack">
+              @for (tag of ['PHP', 'Magento 2', 'REST APIs', 'MySQL', 'Docker', 'RabbitMQ']; track tag) {
+                <span class="cv-tag">{{ tag }}</span>
+              }
+            </div>
+          </div>
+        </div>
+
+        <!-- Evozon -->
+        <div class="cv-company">
+          <div class="cv-company-header">
+            <div>
+              <h3 class="cv-company-name">Evozon</h3>
+              <span class="cv-company-loc">Cluj-Napoca</span>
+            </div>
+            <span class="cv-company-dates">Aug 2017 – Feb 2024</span>
+          </div>
+
+          <div class="cv-role">
+            <div class="cv-role-header">
+              <h4>Symfony Developer</h4>
+              <time>Jan 2022 – Feb 2024</time>
+            </div>
+            <ul>
+              <li>Contributed to the modernization of a large enterprise EHSQ/ESG platform for occupational safety, sustainability, and compliance management.</li>
+              <li>Evaluated legacy systems and contributed to migration strategy decisions from custom/Zend-based architecture toward a modern Symfony ecosystem.</li>
+              <li>Improved code quality, maintainability, scalability, and security through modern backend engineering practices.</li>
+              <li>Implemented best practices, coding standards, and cleanup initiatives across the application.</li>
+              <li>Collaborated within cross-functional teams during large-scale modernization efforts.</li>
+              <li>Worked in Dockerized development environments and enterprise-scale modular applications.</li>
+            </ul>
+            <div class="cv-stack">
+              @for (tag of ['PHP', 'Symfony', 'TypeScript', 'REST APIs', 'Docker', 'MySQL', 'WSL2']; track tag) {
+                <span class="cv-tag">{{ tag }}</span>
+              }
+            </div>
+          </div>
+
+          <div class="cv-role">
+            <div class="cv-role-header">
+              <h4>Magento Developer</h4>
+              <time>Dec 2017 – Dec 2021</time>
+            </div>
+            <ul>
+              <li>Worked on multiple large-scale e-commerce platforms across retail, telecom, DIY, marketplace, and international commerce — involving multi-store architectures, ERP integrations, REST APIs, GDPR compliance, and platform upgrades.</li>
+              <li>Developed and maintained backend features and integrations for enterprise e-commerce platforms.</li>
+              <li>Built and maintained APIs, automation flows, marketing feeds, and ERP integrations.</li>
+              <li>Participated in Magento core upgrades and architectural improvements.</li>
+              <li>Collaborated with product owners, SEO/marketing providers, and external stakeholders.</li>
+              <li>Took ownership of several projects as primary backend developer and technical lead.</li>
+            </ul>
+            <div class="cv-stack">
+              @for (tag of ['PHP', 'Magento 1 & 2', 'JavaScript', 'REST APIs', 'Docker', 'MySQL']; track tag) {
+                <span class="cv-tag">{{ tag }}</span>
+              }
+            </div>
+          </div>
+
+          <div class="cv-role">
+            <div class="cv-role-header">
+              <h4>Drupal Developer</h4>
+              <time>Aug 2017 – Dec 2017</time>
+            </div>
+            <ul>
+              <li>Participated in a Drupal-focused experimental team.</li>
+              <li>Contributed to a headless Drupal proof-of-concept using React and GraphQL.</li>
+              <li>Worked with modern frontend/backend integration concepts.</li>
+            </ul>
+            <div class="cv-stack">
+              @for (tag of ['PHP', 'Drupal', 'React', 'GraphQL', 'Apollo', 'MySQL']; track tag) {
+                <span class="cv-tag">{{ tag }}</span>
+              }
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+  </div>
+</div>
