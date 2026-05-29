@@ -158,9 +158,25 @@ a.cv-contact-item:hover {
   color: white;
 }
 
+.cv-contact-portfolio {
+  color: #93c5fd !important;
+  border-color: rgba(147, 197, 253, 0.2) !important;
+  background: rgba(147, 197, 253, 0.07) !important;
+}
+
+.cv-contact-portfolio:hover {
+  background: rgba(147, 197, 253, 0.16) !important;
+  color: white !important;
+}
+
 .cv-contact-item svg {
   opacity: 0.7;
   flex-shrink: 0;
+}
+
+/* Shown only in print — hides on screen */
+.cv-print-url {
+  display: none;
 }
 
 /* ========================
@@ -476,51 +492,58 @@ li:last-child {
     margin: 0 !important;
   }
 
-  /* Header */
+  /* Header — kept compact so all Nexttech roles fit on page 1 */
   .cv-header {
-    border-radius: 8px !important;
-    padding: 7mm 8mm !important;
-    margin-bottom: 4mm !important;
+    border-radius: 6px !important;
+    padding: 4mm 7mm !important;
+    margin-bottom: 3mm !important;
     background: linear-gradient(135deg, #0f172a 0%, #1a2d5a 60%, #1e3a6e 100%) !important;
   }
 
   .cv-avatar {
-    width: 48px !important;
-    height: 48px !important;
-    font-size: 16px !important;
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 12px !important;
     background: linear-gradient(135deg, #3b82f6, #2563eb) !important;
   }
 
   .cv-header-identity {
-    gap: 14px !important;
+    gap: 10px !important;
   }
 
   .cv-eyebrow {
-    font-size: 6.5pt !important;
-    margin-bottom: 4px !important;
+    font-size: 6pt !important;
+    margin-bottom: 2px !important;
     color: #93c5fd !important;
   }
 
   .cv-name {
-    font-size: 22pt !important;
-    margin-bottom: 4px !important;
+    font-size: 17pt !important;
+    margin-bottom: 2px !important;
   }
 
   .cv-headline {
-    font-size: 9.5pt !important;
+    font-size: 8pt !important;
     color: #94a3b8 !important;
   }
 
   .cv-contacts {
-    gap: 4px !important;
+    gap: 3px !important;
   }
 
   .cv-contact-item {
-    font-size: 7.5pt !important;
-    padding: 2px 7px !important;
+    font-size: 7pt !important;
+    padding: 1px 6px !important;
+    gap: 5px !important;
     color: #cbd5e1 !important;
     background: rgba(255,255,255,0.07) !important;
     border-color: rgba(255,255,255,0.09) !important;
+  }
+
+  /* Show full URLs for LinkedIn and Portfolio in print */
+  .cv-print-url {
+    display: inline !important;
+    font-size: 7pt !important;
   }
 
   /*
