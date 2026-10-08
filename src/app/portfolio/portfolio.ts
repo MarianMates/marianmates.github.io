@@ -38,8 +38,7 @@ export class PortfolioComponent {
       tags: ['Fitness', 'Workout Tracker', 'Full-Stack'],
       privateRepos: true,
       links: [
-        // NOTE: replace with a public URL once deployed
-        { label: 'Demo', href: 'http://192.168.1.143:4300/', type: 'demo' }
+        { label: 'Demo', href: 'http://marianmates.go.ro:4300/', type: 'demo' }
       ]
     },
     {
@@ -51,8 +50,7 @@ export class PortfolioComponent {
       tags: ['Nutrition', 'Meal Planning', 'Full-Stack'],
       privateRepos: false,
       links: [
-        // NOTE: replace with a public URL once deployed
-        { label: 'Demo',     href: 'http://192.168.1.143:4200/',                                                  type: 'demo'     },
+        { label: 'Demo',     href: 'http://marianmates.go.ro:4200/',                                              type: 'demo'     },
         { label: 'Frontend', href: 'https://github.com/MarianMates/athletic-gourmet-frontend-application',        type: 'frontend' },
         { label: 'Backend',  href: 'https://github.com/MarianMates/athletic-gourmet-backend-application',         type: 'backend'  }
       ]
